@@ -8,6 +8,11 @@
 
   <body>
     <div id='container'>Turf-rollup experiment</div>
-    <script src="/js/main.js"></script>
+    <script>
+      var newScript = document.createElement('script');
+      newScript.type = 'text/javascript';
+      newScript.src = '/js/main.js' + '?random=' + Math.random();
+      document.getElementsByTagName('body')[0].appendChild(newScript);
+    </script>
   </body>
 </html>
