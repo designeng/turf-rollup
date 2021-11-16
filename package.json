@@ -15,7 +15,9 @@
   "dependencies": {
     "@turf/boolean-intersects": "^6.5.0",
     "@turf/circle": "^6.5.0",
-    "@turf/helpers": "^6.5.0"
+    "@turf/helpers": "^6.5.0",
+    "concaveman": "^1.2.1",
+    "rbush": "^3.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-babel": "^5.2.1",
