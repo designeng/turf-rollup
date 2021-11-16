@@ -1,0 +1,31 @@
+{
+  "name": "turf-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:dev && npm run server",
+    "build:dev": "rollup --config rollup.config.dev.js",
+    "server": "node ./server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/boolean-intersects": "^6.5.0",
+    "@turf/circle": "^6.5.0",
+    "@turf/helpers": "^6.5.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.0.1",
+    "@rollup/plugin-node-resolve": "~11.2.0",
+    "rollup": "^2.60.0",
+    "rollup-plugin-includepaths": "^0.2.4",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-replace": "^2.2.0",
+    "static-server": "^2.2.1"
+  }
+}
